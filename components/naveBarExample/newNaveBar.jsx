@@ -3,11 +3,12 @@ import {BrowserRouter as Router,NavLink, Route, Routes} from "react-router-dom";
 import Service from "./service.jsx";
 import About from "./about.jsx";
 import Contact from "./contact.jsx";
+import Home from "./home.jsx";
 
 function NewNaveBar(props) {
     return (
         <>
-            <Router>
+
 <div className="flex justify-between items-center ">
         <h1 className={"text-2xl"}>New Nave Bar</h1>
             <ul className={"list-none"}>
@@ -22,11 +23,12 @@ function NewNaveBar(props) {
             </ul>
 </div>
                 <Routes>
+                    <Route path={"/"} element={<Home/>}/>
                     <Route path={"/about"} element={<About/>}/>
                     <Route path={"/service"} element={<Service/>}/>
                     <Route path={"/contact"} element={<Contact/>}/>
                 </Routes>
-            </Router>
+
         </>
     );
 }
