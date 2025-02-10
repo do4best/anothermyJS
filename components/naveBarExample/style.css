@@ -67,3 +67,21 @@ position: sticky;
         display: block;
     }
 }
+.searchBox{
+    display: flex;
+    background: #242424;
+    padding: 5px 5px;
+    border-radius: 50px;
+}
+.searchBox input{
+    padding: 3px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    max-width: 250px;
+}
+.searchBox input::placeholder{
+    color:orange;
+}
